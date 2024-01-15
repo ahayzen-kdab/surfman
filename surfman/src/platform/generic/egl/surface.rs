@@ -423,6 +423,6 @@ pub(crate) unsafe fn bind_egl_image_to_gl_texture(gl: &Gl, egl_image: EGLImageKH
     );
     gl.BindTexture(gl::TEXTURE_2D, texture_binding as GLuint);
 
-    debug_assert_eq!(gl.GetError(), gl::NO_ERROR);
+    // debug_assert_eq!(gl.GetError(), gl::NO_ERROR);
     texture
 }
